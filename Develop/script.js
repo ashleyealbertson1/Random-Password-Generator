@@ -50,7 +50,7 @@ function generatePassword() {
   }
   console.log(choiceNumber)
 
-  var choiceSpecialChar = confirm('Would you like your password to contain any special characters? Click "OK" to confirm.');
+  var choiceSpecialChar = confirm('Would you like your password to contain any numeric values? Click "OK" to confirm.');
 
   // Let user know their numeric preference
   if (choiceSpecialChar === true) {
@@ -87,8 +87,7 @@ function generatePassword() {
   //If the user wants upper case
   if (choiceUpperCase === true) {
     //Add all uppercase options to chars array by looping through uppercase and pushing each one to the array
-    for ( i = 0; i < upperCase.length; i++) {
-      console.log(i, upperCase[i]);
+    for (i = 0; i < upperCase.length; i++); {
       chars.push(upperCase[i]);
     }
   }
@@ -96,9 +95,8 @@ function generatePassword() {
   //If the user wants numbers
   if (choiceNumber === true) {
     //Add all number options to chars array by looping through numbers and pushing each one to the array
-    for (i = 0; i < number.length; i++) {
-      chars.push(number[i]);
-    }
+    for (i = 0; i < number.length; i++);
+    chars.push(number[i]);
   }
 
   //If the user wants special characters
@@ -114,9 +112,11 @@ function generatePassword() {
     var randomIndex = Math.floor(Math.random() * chars.length);
     var randomChars = chars[randomIndex];
     password = password + randomChars;
+
+    return password;
   }
-  console.log(password);
-  return password;
+  console.log(password);ww
+  
 
 }
 
