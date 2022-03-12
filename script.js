@@ -97,6 +97,7 @@ function generatePassword() {
     //Add all number options to chars array by looping through numbers and pushing each one to the array
     for (i = 0; i < number.length; i++);
     chars.push(number[i]);
+    }
   }
 
   //If the user wants special characters
