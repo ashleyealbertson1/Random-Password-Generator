@@ -104,7 +104,7 @@ function generatePassword() {
   //If the user wants special characters
   if (choiceSpecialChar === true) {
     //Add all special character options to chars array by looping throuh numbers and pushing each one to the array
-    for (i = 0; i < specialChar.length; i++); {
+    for (i = 0; i < specialChar.length; i++) {
       chars.push(specialChar[i]);
     }
   }
